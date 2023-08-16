@@ -1,0 +1,10 @@
+# Binaries
+*.exe
+
+# Non-source
+!*.cpp
+!*.js
+
+
+# Ignores
+*.ignore
