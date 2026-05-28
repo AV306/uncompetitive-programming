@@ -1,3 +1,5 @@
-#! /usr/bin/sh
+#! /usr/bin/bash
+name="${1//.cpp/}"
+g++ "$name.cpp" -o $name && echo "Begin input" && ./$name
 
-g++ $1.cpp -o $1 && ./$1
+if [[ $2 != "preserve" ]]; then rm $name; fi
